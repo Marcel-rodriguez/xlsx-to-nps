@@ -70,7 +70,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>XSLX to NPS Score Converter!</h1>
+      <h1>Excel NPS Sheet to NPS Score Converter!</h1>
 
       <input type='file' onChange={(e) => {
         const file = e.target.files[0]
