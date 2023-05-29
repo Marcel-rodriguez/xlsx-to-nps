@@ -16,6 +16,7 @@ function App() {
   },[showScore])
 
   const showNPSPercentages = (data) => {
+    console.log(data)
     for(let i = 0; i < data.length; i++){
       const actualValue = data[i].actual_value
       if(actualValue >= 9){
@@ -45,7 +46,11 @@ function App() {
 
         const ws= wb.Sheets[wsname]
 
+        console.log(ws)
+
         const data = XLSX.utils.sheet_to_json(ws)
+
+        console.log(data)
 
         resolve(data)
       }
